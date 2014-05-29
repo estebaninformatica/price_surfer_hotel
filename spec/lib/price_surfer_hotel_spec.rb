@@ -22,9 +22,10 @@ describe PriceSurferHotel do
 
 		delicious = delicious.with_basic_auth('estebanfuhrmann', 'holahola' )
 
-		query_args = { :url => 'https://wadl.dev.java.net/',
-		              :description => 'WADL homepage2',
-		              :extended => 'Posted with Ruby WADL client222' }
+		query_args = { :url => 'https://www.google.com.ar2/',
+		              :description => 'Agrego Google2',
+		              :extended => 'La web de google2' }
+		sleep(1)
 		begin
 			delicious.posts.add.get(:query => query_args)
 		rescue WADL::Faults::AuthorizationRequired
